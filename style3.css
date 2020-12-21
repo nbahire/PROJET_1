@@ -1,0 +1,699 @@
+/* Polices personnalisées */
+@font-face
+{
+	font-family: 'FontAwesome';
+    src: url('webagency_images/fonts/fontawesome-webfont.eot');
+    src: url('webagency_images/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
+         url('webagency_images/fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('webagency_images/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+	font-family: 'glyphicons-halflings-regular';
+    src: url('webagency_images/fonts/glyphicons-halflings-regular.eot');
+    src: url('webagency_images/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('webagency_images/fonts/glyphicons-halflings-regular.woff') format('woff'),
+         url('webagency_images/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('webagency_images/fonts/glyphicons-halflings-regular.svg#FontAwesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+	font-family: 'Roboto-Black';
+    src: url('webagency_images/fonts/Roboto-Black.eot');
+    src: url('webagency_images/fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+         url('webagency_images/fonts/Roboto-Black.ttf') format('truetype'),
+         url('webagency_images/fonts/Roboto-Black.svg#FontAwesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+		/* Eléments principaux de la page */
+
+body
+{
+	margin: auto;
+	font-family: sans-serif;
+
+}
+
+
+		/* Header */
+
+header
+{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	height: 90px;	
+	background-color: white;
+	box-shadow: 0px 2px 4px gray;
+	z-index: 4;
+}
+
+.logo
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 190px;
+	align-self: center;
+}
+
+.img1
+{
+	margin-top: 15px;
+}
+
+
+/* Navigation */
+
+	nav ul
+	{
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 90px;
+		width: 300px;
+		margin-top: 0px;
+		margin-right: 160px;
+	}
+
+	nav li
+	{
+		margin: auto;
+		height: 90px;
+		padding-top: 35px;
+		width: 70px;
+		padding-left: 8px; 
+	}
+
+	nav a
+	{
+	color: #7C7C7C;
+	text-decoration: none;
+	padding: 32px 10px 31px 10px;
+	}
+
+		nav a:hover
+		{
+			color: black;
+			border-top: 3px solid #5CADD3;
+		}
+
+	.accu a
+	{
+		color: black;
+		border-top: 3px solid #5CADD3;
+	}
+
+
+		/*Section 1: L'ecran d'acceuil*/
+
+#acc
+{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+
+
+	/* positionnement des images*/
+	.right
+	{
+		position: absolute;
+		top: 300px;
+		width: 80px;
+		height: 80px;
+		padding: 0px;
+		right: 0px;
+		overflow: hidden; 
+
+	}
+	.right i
+	{
+		font-size: 20px;
+		padding: 20px 30px 20px 10px;
+		margin-left: 48px;
+		color: white;
+		border-radius: 100%; 
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	
+
+		.right i:hover
+		{
+			background-color: rgba(0, 0, 0, 1);
+		}
+	.left
+	{
+		position: absolute;
+		top: 300px;
+		width: 80px;
+		height: 80px;
+		padding: 0px;
+		left: 0px;
+		overflow: hidden;
+
+	}
+
+	.left i
+	{
+		font-size: 20px;
+		padding: 20px 10px 20px 30px ;
+		margin-left: -22px ;
+		color: white;
+		border-radius:100%; 
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	
+		.left i:hover
+		{
+			background-color: rgba(0, 0, 0, 1);
+		}
+
+	.img2 img
+	{ 
+		width: 106%;
+		margin-top:70px;
+	}
+
+	.img2:after
+	{
+		position: absolute;
+		content: "";
+		overflow: hidden;
+		border-style: solid;
+		margin-left: 0px;
+		margin-top: -9px;
+		width: 0%;
+		height: 0.7%;
+		border-left-width: 10vmax;
+		border-right-width: 88.8vmax;
+		border-top-width: 0em;
+		border-bottom-width: 0em;
+		border-color: yellow rgba(0,0,0,0.3) red #5CADD3;
+	}
+
+
+	/* Modification et positionnement du texte d'accompagnement de la page principale*/
+
+	#pro
+	{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		left: 200px;
+		top: 250px;
+		width: 40%;
+		color: white;
+	}
+
+	#pro h1
+	{
+		font-family: Roboto-Black;
+		font-size: 35px;
+	}
+
+		span
+		{
+			font-family: Roboto-Black;
+			color: #5CADD3;
+		}
+
+	#pro p
+	{
+		margin-top: -10px;
+		font-size: 13px;
+		font-weight: bold;
+	}
+
+
+/* modification du bouton cliquable "plus d'infos"*/
+
+	.infos
+	{
+		width:115px ;
+		height:30px;
+		margin-top: 10px;
+		padding-top: 10px;
+		border-radius: 4px;
+		border-bottom: 2px solid #4494BB;
+		background-color: #5CADD3;	
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.infos a 
+	{
+		padding-bottom: 10px;
+    	color: white;
+    	text-decoration: none;	
+	}
+
+		.infos a:hover
+		{
+			color: #B9DDED;
+		}
+	
+
+		/*Section 2:Liste des services du site*/
+
+/* Mise en place du text de principal presentation des services*/
+
+#services
+{
+	padding-top: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+
+/* Mise en place des differents serivices proposé*/
+
+	.serv
+	{
+		width: 44%;
+	}
+
+	.serv h1
+	{
+		font-size: 50px;
+		font-family: 'Roboto-Black';
+	}
+
+	.serv p
+	{
+		margin-top: -20px;
+	}
+
+	.main
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-left: 180px;
+		padding-top: 50px;
+	}
+
+	.main ul
+	{
+
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		padding-top: 35px;
+	}
+
+	.main li
+	{
+
+		display: flex;
+		flex-direction: row;
+		justify-content:flex-start;
+		align-items: flex-start;
+		padding-left: 50px;
+	}
+	.graf
+	{
+		width: 90px;
+		height: 90px;
+		margin-top: 20px;
+		border: 1px solid #7C7C7C;
+		border-radius: 100%;
+	}
+	.graf i
+	{
+		margin-top: -55px;
+		margin-left: -55px;
+		font-size: 40px;
+		color: #5DADD3;
+		padding: 80px;
+	}
+	.cercle i
+	{
+		margin-top: 55px;
+		margin-left: -15px;
+		color: #5DADD3;
+		font-size: 15px;
+		border: 5px white solid;
+		background-color: white;
+	}
+
+	.sous_li
+	{
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		text-align: left;
+		padding-left: 25px;	
+	}
+
+	.sous_li p
+	{
+		margin-top: -15px;
+	}
+
+	.sous_li h3
+	{
+		font-family: 'Roboto-Black';
+	}
+
+	
+
+
+
+/* Mise en place de la ligne de separation du titre */
+	.line
+	{
+		margin: 20px;
+		margin-top: -30px;
+		margin-left: 260px;
+		width: 150px;
+		height: 20px;
+		border-top:1px solid #7C7C7C;
+	}
+
+	.line i
+	{
+		position: absolute;
+		margin-top: -10px;
+		margin-left: -10px;
+		color: #5DADD3;
+		font-size: 10px;
+		border: 5px white solid;
+		background-color: white;
+	}
+	
+
+		/*Section 3:Les projets déja realisés*/
+
+#projets
+{
+	padding-top: 70px;
+	background-color: #F5F5F5;
+}
+
+/* Mise en place de la ligne de separation du titre */
+	.line2
+	{
+		margin: 20px;
+		margin-top: -30px;
+		width: 150px;
+		height: 20px;
+		border-top:1px solid #7C7C7C;
+	}
+
+	.line2 i
+	{
+		position: absolute;
+		margin-top: -10px;
+		margin-left: -10px;
+		color: #5DADD3;
+		font-size: 10px;
+		border: 5px #F5F5F5 solid;
+		background-color: #F5F5F5;
+	}
+
+
+/* Mise en place du text de principal presentation des projets*/
+
+	.Lorem
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 44%;
+	}
+
+	.Lorem h1
+	{
+		font-family: 'Roboto-Black';
+		font-size: 50px;
+	}
+
+	.Lorem p
+	{
+		margin-top: -20px;
+	}
+	
+
+/*traitement du menu de navigation des différents projets  */
+
+	#projets
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#Works
+	{
+
+    	list-style-type: none;
+    	display: flex;
+    	padding: 0px;
+    	border-radius: 4px;
+    	background-color: #E7E7E7;
+ 	}
+	
+	.Creat a
+	{
+		padding: 8px 6px 8px 6px;
+		color:black;
+		text-decoration: none;
+	}
+
+		.Creat a:hover
+		{
+			color: white;
+		}
+
+	.Creat
+	{
+		padding: 10px 6px 10px 6px;
+		border-bottom: 3px solid transparent;
+	}
+		.Creat:after
+		{
+			border-style: solid;
+			content:"";
+			position: absolute;
+			margin-left: -40px;
+			margin-top: 30px;
+			border-width: 7px 8px 0 8px;
+  			border-color: transparent transparent ;
+		}
+
+		.Creat:hover
+		{
+
+    		background-color: #5CADD3;
+    		border-radius: 3px 0px 0px 3px;
+    		border-bottom: 3px solid #468CAD ;
+		}
+
+			.Creat:hover:after
+			{
+				border-style: solid;
+				content:"";
+				position: absolute;
+				margin-left: -50px;
+				margin-top: 30px;
+				border-width: 7px 8px 0 8px;
+  				border-color: #468CAD transparent ;
+			}
+
+	.actif
+	{
+		background-color: #5CADD3;
+		padding: 10px 6px 10px 6px;
+		border-radius: 3px 0px 0px 3px;
+		border-bottom: 3px solid #468CAD;
+	}
+	.actif:after
+		{
+			border-style: solid;
+			content:"";
+			position: absolute;
+			margin-left: -50px;
+			margin-top: 30px;
+			border-width: 7px 8px 0 8px;
+  			border-color: #468CAD transparent ;
+		}
+	.actif a
+	{
+		padding: 8px 6px 8px 6px;
+		color:white;
+		text-decoration: none;
+	}
+
+/* redimensionnement des projets et mise en position*/
+
+	.Portfolio
+	{
+		display: flex;
+		justify-content: center;
+		align-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.Portfolio img
+	{
+		margin:20px;
+		width: 265px;
+	}
+
+
+/*Mise en place du text de presentation de chaque projet*/
+
+	.sit
+	{
+		position: absolute;
+		margin-left:20px;
+		padding-left: 10px;
+		margin-top: -88px;
+		width: 255px;
+		height: 65px;
+		opacity: 0;
+	}
+
+	.sit h4
+	{
+		margin-top: 10px;
+		opacity: 1;
+	}
+
+	.sit p
+	{
+		font-size: 15px;
+		margin-top: -15px;
+		opacity: 1;
+	}
+
+	.sit i
+	{
+		font-size: 12px;
+		color: white;
+		background-color: #4794B1;
+		padding: 12px;
+		border: 2px solid white;
+		border-radius: 100%;
+		position: absolute;
+		margin-left: 205px;
+		margin-top: -88px;
+	}
+
+		.sit:hover
+		{
+			color: white;
+			background: rgba(0, 0 ,0, 0.7);
+			opacity: 1;
+		}
+	
+	
+		/*footer :L'ecran d'acceuil*/
+
+footer
+{
+	padding-top: 90px;
+	display: flex;
+	width: 100%;
+}
+
+
+/*positionnement du formulaire de contact*/
+
+fieldset
+	{
+		position: absolute;
+		margin-left: 60vmax;
+		margin-top: 50px;
+		width: 380px;
+		height: 530px;
+		background-color: white;
+		background: rgba(255, 255, 255, 0.6);
+		padding-left: 30px;
+		border: none;
+		z-index: 3;
+	}
+
+fieldset p
+	{
+		margin-top: -15px;
+	}
+
+fieldset h2
+{
+	font-family: 'Roboto-Black';
+}
+
+textarea
+	{
+		font-family: sans-serif;
+		margin-top: 20px;
+		padding-left: 10px;
+		width: 350px;
+		height: 175px;
+	}
+
+	.Message input
+		{
+			padding-left: 10px;
+			margin-top: 20px;
+			width: 350px;
+		}
+
+
+	.send
+	{
+		margin-top: 10px;
+		width:115px; 
+		height:40px;
+		background-color: #5CADD3;
+		color: white;
+		border-radius: 2px;
+		border: 2px solid #5CADD3;
+		border-bottom: 3px solid #4494BB;	
+	}
+
+		.send:hover
+		{
+			color: #E7ECEF;
+		}
+
+
+/* Traitement de la map*/
+
+iframe
+{
+	position: absolute;
+	margin-top: 15px;
+	width: 100%;
+}
+.filtre p
+{
+	position: absolute;
+	background-color: #5CADD3;
+	width: 100%;
+	height: 650px;
+	color: transparent;
+	z-index: 2;
+	opacity:0.4;
+}

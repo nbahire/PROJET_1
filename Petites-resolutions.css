@@ -1,0 +1,326 @@
+                /* Mise en place des media quiries */
+
+        /* Comportement de la page web pour ecrans de 1080px ou moins */
+
+
+@media screen and (max-width: 1080px)
+{
+    /*Header*/
+
+    header
+    {
+        height: 70px;
+    }
+
+    .img1 img
+    {
+        margin-top: 15px;
+        width: 150px;
+    }
+
+    .logo
+    {
+
+    padding-left: 20px;
+
+    }
+
+
+    /* Comportement de la section 1*/
+
+    .right
+    {
+        top: 30%;
+    }
+
+    .left
+    {
+        top: 30%;
+    }
+
+    .img2:after
+    {
+        display: none;
+    }
+
+    .img2 img
+    {
+        margin-top: 50px;
+    }
+
+    #pro
+    {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+
+    #pro h1
+    {
+        font-size: 25px;
+    }
+
+    #pro p
+    {
+        margin-top: -20px;
+
+    }
+    .infos
+    {
+        margin-top: -5px;
+    }
+
+    /* Comportement de la section 2 */
+    .line
+    {
+        margin-top: 0px;
+        margin-left: 42%;
+        width: 100px;
+    }
+
+    .serv
+    {
+        width: 70%;
+    }
+
+    .serv h1
+    {
+        font-size: 30px;
+    }
+
+    .main
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 0px;
+    }
+    .img3 img
+    {
+        width: 70%;
+    }
+
+
+    /* Comportement de la deuxieme section 2 */
+    .line2
+    {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100px;
+
+    }
+
+    .Lorem
+    {
+
+        width: 70%;
+    }
+
+    .Lorem h1
+    {
+        font-size: 30px;
+    }
+
+
+    /*Footer*/
+    fieldset
+    {
+        position: absolute;
+        margin-left: 50%;
+        width: 320px;
+        padding-left: 10px;
+    }
+
+    textarea
+    {
+        width: 330px;
+    }
+
+    .Message input
+    {
+            width: 330px;
+    }
+    
+
+}
+        /* Comportement de la page web pour ecrans de 680px ou moins */
+
+@media screen and (max-width: 700px)
+
+{
+
+    /*Header*/
+    .logo
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .img1
+    {
+        margin-top: 0px;
+    }
+
+    .img1 img
+    {
+        margin-top: 0px;
+        width: 150px;
+    }
+
+    nav ul
+    {
+        width: 50px;
+        padding-left:  0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    nav li
+    {
+
+        margin-top: 5px;
+        margin-left: 0px;
+        padding-top: 0px;
+        width: 60px;
+        padding-left: 5px; 
+
+    }
+
+    nav a
+    {
+        padding: 0px;
+    }
+
+
+    /* Comportement de la section 1 */
+    #acc
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #pro
+    {
+        position: static;
+        width: 100%;
+        color: black;
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+
+    #pro p
+    {
+        display: none;
+    }
+
+    #pro h1
+    {
+        margin-left: 10px;
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .infos
+    {
+        display: none;
+    }
+
+
+    .img2 img
+    {
+        margin-top: 0px;
+    }
+
+    .left
+    {
+        display: none;
+    }
+
+    .right
+    {
+        display: none;
+    }
+
+
+    /* Comportement de la section 2 */
+    .line
+    {
+        margin-left: 35%;
+    }
+
+    #services 
+    {
+        padding-top: 0px;
+    }
+
+    .serv
+    {
+        width: 80%;
+    }
+
+    .main ul
+    {
+        margin-left: -80px;
+    }
+
+
+    /* Comportement de la section 3 */
+
+    #projets
+    {
+        padding-top: 0px;
+    }
+
+    .Lorem
+    {
+        width: 80%;
+    }
+
+     #Works li
+    {
+        padding: 10px 0px 12px 0px;
+        font-size: 14px;
+    }
+
+
+
+    /* Footer*/
+
+    .filtre
+    {
+        display: none;
+    }
+
+    fieldset
+    {
+        position: absolute;
+        margin: 0px 0px 0px 2px;
+        width: 80px;
+        height: 500px;
+        padding-left: 2px;
+        border: 1px solid black;
+    }
+     textarea
+    {
+        width: 280px;
+        height: 120px;
+    }
+    .Message input
+    {
+            width: 280px;
+    }
+
+    .send
+    {
+        width: 70%;
+    }
+    form
+    {
+        width: 100%
+    }
+}
+
+
